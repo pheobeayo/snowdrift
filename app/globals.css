@@ -1,0 +1,192 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ────────────────────────────────────────────────────────────────
+   Snowdrift Protocol — design tokens
+   Palette lifted from TrustLance: teal accents on green-tinted
+   near-black surfaces. Fonts: Syne (display), DM Sans (body),
+   DM Mono (numbers / addresses).
+   ──────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Teal accent scale */
+  --teal-50: #e4f7f0;
+  --teal-100: #b3e9d5;
+  --teal-300: #3dc99a;
+  --teal-400: #14c490; /* bright accent */
+  --teal-500: #0d9e75; /* primary */
+  --teal-600: #0a7a5a; /* pressed / active border */
+  --teal-700: #075c43;
+  --teal-900: #021f16;
+
+  /* Green-tinted black surfaces */
+  --surface-0: #080d0a; /* page background */
+  --surface-1: #0c1410; /* sidebar / nav */
+  --surface-2: #101a15; /* cards */
+  --surface-3: #162119; /* inputs, inner cards */
+  --surface-4: #1c2b22; /* hover states */
+
+  /* Borders */
+  --line-1: #182419;
+  --line-2: #1e2f24;
+  --line-3: #294038;
+
+  /* Text */
+  --text-1: #e5f2ea;
+  --text-2: #95b8a5;
+  --text-3: #567a68;
+
+  /* shadcn semantic mapping (dark-native app) */
+  --radius: 0.75rem;
+  --background: var(--surface-0);
+  --foreground: var(--text-1);
+  --card: var(--surface-2);
+  --card-foreground: var(--text-1);
+  --popover: var(--surface-3);
+  --popover-foreground: var(--text-1);
+  --primary: var(--teal-500);
+  --primary-foreground: #04120c;
+  --secondary: var(--surface-3);
+  --secondary-foreground: var(--text-1);
+  --muted: var(--surface-3);
+  --muted-foreground: var(--text-2);
+  --accent: var(--surface-4);
+  --accent-foreground: var(--text-1);
+  --destructive: #e5484d;
+  --destructive-foreground: #fff1f1;
+  --border: var(--line-2);
+  --input: var(--line-3);
+  --ring: var(--teal-500);
+  --chart-1: var(--teal-400);
+  --chart-2: #5aa9e6;
+  --chart-3: #f4b860;
+  --chart-4: #c084fc;
+  --chart-5: #f97583;
+  --sidebar: var(--surface-1);
+  --sidebar-foreground: var(--text-2);
+  --sidebar-primary: var(--teal-500);
+  --sidebar-primary-foreground: #04120c;
+  --sidebar-accent: var(--surface-3);
+  --sidebar-accent-foreground: var(--text-1);
+  --sidebar-border: var(--line-1);
+  --sidebar-ring: var(--teal-500);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Raw palette exposed as Tailwind colors */
+  --color-teal-50: var(--teal-50);
+  --color-teal-100: var(--teal-100);
+  --color-teal-300: var(--teal-300);
+  --color-teal-400: var(--teal-400);
+  --color-teal-500: var(--teal-500);
+  --color-teal-600: var(--teal-600);
+  --color-teal-700: var(--teal-700);
+  --color-teal-900: var(--teal-900);
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-surface-4: var(--surface-4);
+  --color-line-1: var(--line-1);
+  --color-line-2: var(--line-2);
+  --color-line-3: var(--line-3);
+  --color-ink-1: var(--text-1);
+  --color-ink-2: var(--text-2);
+  --color-ink-3: var(--text-3);
+
+  --font-display: var(--font-syne), sans-serif;
+  --font-sans: var(--font-dm-sans), sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background: var(--teal-600);
+    color: var(--teal-50);
+  }
+  /* Thin teal-tinted scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-3) transparent;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-glow {
+    text-shadow: 0 0 24px rgba(20, 196, 144, 0.35);
+  }
+  .card-glow {
+    box-shadow: 0 0 0 1px var(--line-2), 0 8px 32px rgba(4, 10, 7, 0.6);
+  }
+  .teal-grid-bg {
+    background-image:
+      linear-gradient(rgba(20, 196, 144, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(20, 196, 144, 0.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
