@@ -80,7 +80,7 @@ export default function OverviewPage() {
             <CardTitle className="flex items-center gap-2 text-sm font-medium text-ink-2">
               <GitMerge className="size-4 text-teal-400" /> Open Source Module
             </CardTitle>
-            <Badge variant="points">Wave {liveWave?.number} live</Badge>
+            <Badge variant="points">Drift {liveWave?.number} live</Badge>
           </CardHeader>
           <CardContent className="space-y-4">
             <div>
@@ -131,7 +131,7 @@ export default function OverviewPage() {
         <Card>
           <CardHeader>
             <CardTitle className="text-sm font-medium text-ink-2">
-              Wave standing
+              Drift standing
             </CardTitle>
           </CardHeader>
           <CardContent>
