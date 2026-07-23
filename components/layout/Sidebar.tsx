@@ -3,25 +3,22 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
 import {
   Briefcase,
   ChevronDown,
   CircleDot,
   GitMerge,
   LayoutDashboard,
-  LogOut,
   Snowflake,
-  Wallet,
   X,
 } from "lucide-react";
-import { toast } from "sonner";
+import { LogoutButton, WalletCard } from "@/components/wallet/WalletCard";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { cn, shortAddress } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface ModuleItem {
   label: string;
@@ -35,8 +32,7 @@ interface Module {
   items: ModuleItem[];
 }
 
-/* Two modules, mirroring ThriftChains' "Savings Module" dropdown —
-   Tasks and Open Source stay fully independent of each other. */
+
 const modules: Module[] = [
   {
     label: "Tasks Module",
@@ -52,7 +48,7 @@ const modules: Module[] = [
     icon: GitMerge,
     base: "/dashboard/opensource",
     items: [
-      { label: "Wave Overview", href: "/dashboard/opensource" },
+      { label: "Drift Overview", href: "/dashboard/opensource" },
       { label: "Projects", href: "/dashboard/opensource/projects" },
       { label: "Bounty Issues", href: "/dashboard/opensource/issues" },
       { label: "Points & Rewards", href: "/dashboard/opensource/rewards" },
@@ -62,14 +58,7 @@ const modules: Module[] = [
 
 function NavContent({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
-  const router = useRouter();
   const overviewActive = pathname === "/dashboard";
-
-  const handleLogout = () => {
-    onNavigate?.();
-    toast.success("Wallet disconnected");
-    router.push("/");
-  };
 
   return (
     <div className="flex h-full flex-col">
@@ -148,24 +137,8 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
       </nav>
 
       <div className="space-y-2 border-t border-sidebar-border p-4">
-        <div className="flex items-center gap-3 rounded-xl border border-line-2 bg-surface-2 px-3 py-2.5">
-          <span className="flex size-8 items-center justify-center rounded-full bg-teal-500/15 text-teal-400">
-            <Wallet className="size-4" />
-          </span>
-          <div className="min-w-0">
-            <p className="truncate font-mono text-xs text-ink-1">
-              {shortAddress("0x9E21fA6b30C87d34a11e5B0d64C1fD08a37Bc901")}
-            </p>
-            <p className="text-[11px] text-ink-3">Fuji Testnet</p>
-          </div>
-        </div>
-        <button
-          onClick={handleLogout}
-          className="flex w-full items-center gap-3 rounded-full px-4 py-2.5 text-sm font-medium text-ink-2 transition-colors hover:bg-surface-3 hover:text-red-400 cursor-pointer"
-        >
-          <LogOut className="size-4" />
-          Log out
-        </button>
+        <WalletCard />
+        <LogoutButton onAfter={onNavigate} />
       </div>
     </div>
   );

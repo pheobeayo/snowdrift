@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   ArrowRight,
@@ -16,12 +18,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { taskStats, tasks } from "@/lib/tasks/data";
+import { useTaskStats } from "@/hooks";
 import { ossStats, waves, myContribution } from "@/lib/opensource/data";
 
 export default function OverviewPage() {
   const liveWave = waves.find((w) => w.status === "Live");
-  const openTasks = tasks.filter((t) => t.status === "Open").length;
+  const { inEscrow, openTasks, releaseRate, completed, isLoading } =
+    useTaskStats();
 
   return (
     <div className="space-y-8">
@@ -33,9 +36,7 @@ export default function OverviewPage() {
         </p>
       </div>
 
-      {/* One summary card per module — same layout as ThriftChains'
-          Individual / Group savings cards, but the two engines never
-          share data. */}
+      
       <section aria-label="Module summaries" className="grid gap-5 md:grid-cols-2">
         {/* Tasks Module */}
         <Card className="card-glow">
@@ -48,13 +49,13 @@ export default function OverviewPage() {
           <CardContent className="space-y-4">
             <div>
               <p className="font-mono text-3xl text-ink-1">
-                {taskStats.inEscrow.toLocaleString()}{" "}
+                {isLoading ? "—" : inEscrow.toLocaleString()}{" "}
                 <span className="text-base text-ink-3">AVAX</span>
               </p>
               <p className="mt-1 flex items-center gap-1 text-sm text-ink-2">
                 locked in escrow
                 <span className="ml-2 inline-flex items-center gap-0.5 text-teal-400">
-                  <TrendingUp className="size-3.5" /> {taskStats.releaseRate}% release rate
+                  <TrendingUp className="size-3.5" /> {releaseRate}% release rate
                 </span>
               </p>
             </div>
@@ -66,7 +67,7 @@ export default function OverviewPage() {
               </Button>
               <Button asChild variant="outline">
                 <Link href="/dashboard/tasks">
-                  Browse {openTasks} open tasks <ArrowRight />
+                  Browse {isLoading ? "" : openTasks} open tasks <ArrowRight />
                 </Link>
               </Button>
             </div>
@@ -121,7 +122,7 @@ export default function OverviewPage() {
             <div>
               <p className="font-display text-lg font-semibold">Snowfall tier</p>
               <p className="text-sm text-ink-2">
-                {taskStats.badgesMinted} badges minted platform-wide
+                {completed} completed on-chain
               </p>
             </div>
           </CardContent>

@@ -7,14 +7,21 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import type { Task, TaskMilestone, TaskStatus } from "@/lib/tasks/data";
+import type { SubmissionState } from "@/hooks";
+import type { Task, TaskStatus } from "@/lib/tasks/data";
 import { shortAddress } from "@/lib/utils";
 
 interface TaskSidePanelProps {
   task: Task;
   status: TaskStatus;
-  nextLocked?: TaskMilestone;
-  nextSubmitted?: TaskMilestone;
+  isConnected: boolean;
+  isPoster: boolean;
+  hasJoined: boolean;
+  mySubmission: SubmissionState;
+  pendingWorker?: `0x${string}`;
+  busy: boolean;
+  submitting: boolean;
+  approving: boolean;
   onAccept: () => void;
   onSubmitProof: () => void;
   onApproveRelease: () => void;
@@ -23,8 +30,14 @@ interface TaskSidePanelProps {
 export function TaskSidePanel({
   task,
   status,
-  nextLocked,
-  nextSubmitted,
+  isConnected,
+  isPoster,
+  hasJoined,
+  mySubmission,
+  pendingWorker,
+  busy,
+  submitting,
+  approving,
   onAccept,
   onSubmitProof,
   onApproveRelease,
@@ -74,34 +87,78 @@ export function TaskSidePanel({
           </dl>
           <Separator />
           <div className="space-y-2">
-            {status === "Open" && (
-              <Button className="w-full" onClick={onAccept}>
-                Accept task
-              </Button>
+            {!isConnected && (
+              <p className="rounded-lg border border-line-2 bg-surface-3 py-2.5 text-center text-sm text-ink-2">
+                Connect your wallet to act on this task
+              </p>
             )}
-            {status !== "Open" && status !== "Completed" && nextLocked && (
-              <Button
-                className="w-full"
-                variant="secondary"
-                onClick={onSubmitProof}
-              >
-                <Upload /> Submit proof
-              </Button>
-            )}
-            {nextSubmitted && status !== "Completed" && (
-              <Button className="w-full" onClick={onApproveRelease}>
-                Approve & release
-              </Button>
-            )}
-            {status === "Completed" && (
+
+            {status === "Completed" ? (
               <p className="flex items-center justify-center gap-2 rounded-lg border border-teal-700/60 bg-teal-500/10 py-2.5 text-sm text-teal-300">
                 <CircleCheck className="size-4" /> Escrow settled
               </p>
-            )}
+            ) : isPoster ? (
+              /* Poster: review and release */
+              pendingWorker ? (
+                <>
+                  <Button
+                    className="w-full"
+                    onClick={onApproveRelease}
+                    disabled={approving}
+                  >
+                    {approving ? "Releasing…" : "Approve & release"}
+                  </Button>
+                  <p className="text-center font-mono text-[11px] text-ink-3">
+                    to {shortAddress(pendingWorker)}
+                  </p>
+                </>
+              ) : (
+                <p className="rounded-lg border border-line-2 bg-surface-3 py-2.5 text-center text-sm text-ink-2">
+                  You posted this task — waiting on a submission
+                </p>
+              )
+            ) : isConnected ? (
+            
+              !hasJoined ? (
+                <Button
+                  className="w-full"
+                  onClick={onAccept}
+                  disabled={busy || status !== "Open"}
+                >
+                  {busy
+                    ? "Accepting…"
+                    : status === "Open"
+                      ? "Accept task"
+                      : "No slots available"}
+                </Button>
+              ) : mySubmission === "Submitted" ? (
+                <p className="rounded-lg border border-[#5aa9e6]/40 bg-[#5aa9e6]/5 py-2.5 text-center text-sm text-[#5aa9e6]">
+                  Proof submitted — awaiting review
+                </p>
+              ) : mySubmission === "Approved" ? (
+                <p className="flex items-center justify-center gap-2 rounded-lg border border-teal-700/60 bg-teal-500/10 py-2.5 text-sm text-teal-300">
+                  <CircleCheck className="size-4" /> Paid out
+                </p>
+              ) : (
+                <Button
+                  className="w-full"
+                  variant="secondary"
+                  onClick={onSubmitProof}
+                  disabled={submitting}
+                >
+                  <Upload />{" "}
+                  {submitting
+                    ? "Submitting…"
+                    : mySubmission === "Rejected"
+                      ? "Resubmit proof"
+                      : "Submit proof"}
+                </Button>
+              )
+            ) : null}
           </div>
           <p className="text-xs leading-relaxed text-ink-3">
-            Funds stay in EscrowManager.sol until milestones are confirmed. If
-            the client disappears, the worker reclaims after the timeout.
+            Funds stay in SnowdriftTaskEscrow until the poster approves. If the
+            deadline passes unsettled, escrow refunds to the poster.
           </p>
         </CardContent>
       </Card>

@@ -32,13 +32,15 @@ export function TaskCard({ task }: { task: Task }) {
           <p className="line-clamp-2 text-sm leading-relaxed text-ink-2">
             {task.description}
           </p>
-          <div className="flex flex-wrap gap-1.5">
-            {task.skills.slice(0, 4).map((s) => (
-              <Badge key={s} variant="outline">
-                {s}
-              </Badge>
-            ))}
-          </div>
+          {task.skills.length > 0 && (
+            <div className="flex flex-wrap gap-1.5">
+              {task.skills.slice(0, 4).map((s) => (
+                <Badge key={s} variant="outline">
+                  {s}
+                </Badge>
+              ))}
+            </div>
+          )}
           <div className="mt-auto flex items-end justify-between border-t border-line-1 pt-3">
             <div>
               {task.flow === "Paid" ? (
@@ -54,9 +56,11 @@ export function TaskCard({ task }: { task: Task }) {
               </p>
             </div>
             <div className="space-y-1 text-right text-[11px] text-ink-3">
-              <p className="flex items-center justify-end gap-1">
-                <Clock3 className="size-3" /> ~{task.estimatedHours}h
-              </p>
+              {task.estimatedHours > 0 && (
+                <p className="flex items-center justify-end gap-1">
+                  <Clock3 className="size-3" /> ~{task.estimatedHours}h
+                </p>
+              )}
               <p className="flex items-center justify-end gap-1">
                 <CalendarDays className="size-3" /> due {task.deadline}
               </p>

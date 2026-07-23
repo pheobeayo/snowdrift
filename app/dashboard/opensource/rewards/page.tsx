@@ -20,7 +20,7 @@ const pointHistory = [
   { label: "avalanchejs #1101 — TSDoc coverage", points: 75, date: "Jul 18" },
   { label: "builders-hub #861 — i18n state fix (merged)", points: 220, date: "Jul 14" },
   { label: "kite_counter_dapp #38 — dark-mode tokens", points: 60, date: "Jul 09" },
-  { label: "Wave 2 participation bonus", points: 285, date: "Jun 29" },
+  { label: "Drift 2 participation bonus", points: 285, date: "Jun 29" },
 ];
 
 export default function RewardsPage() {
@@ -47,7 +47,7 @@ export default function RewardsPage() {
         <Card className="card-glow">
           <CardContent className="p-5">
             <p className="flex items-center gap-1.5 text-xs uppercase tracking-widest text-ink-3">
-              <Sparkles className="size-3.5 text-[#c084fc]" /> Wave {live?.number} points
+              <Sparkles className="size-3.5 text-[#c084fc]" /> Drift {live?.number} points
             </p>
             <p className="mt-2 font-mono text-3xl text-[#c084fc]">
               {myContribution.wavePoints}

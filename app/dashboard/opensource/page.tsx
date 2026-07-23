@@ -36,9 +36,9 @@ export default function OpenSourcePage() {
           One-week contribution sprints across the Avalanche ecosystem.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-2 sm:text-base">
-          During a Wave, merged pull requests earn Points. Points set your
+          During a Drift, merged pull requests earn Points. Points set your
           weight in retro-active reward distributions and automated split
-          allocations — paid bounties settle instantly on merge, no admin in
+          allocations; paid bounties settle instantly on merge, no admin in
           the loop.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
@@ -79,7 +79,7 @@ export default function OpenSourcePage() {
 
       {/* Wave programs */}
       <section className="space-y-4">
-        <h3 className="font-display text-lg font-semibold">Wave programs</h3>
+        <h3 className="font-display text-lg font-semibold">Drift programs</h3>
         <div className="space-y-3">
           {ordered.map((w) => (
             <Card
@@ -91,7 +91,7 @@ export default function OpenSourcePage() {
               <CardContent className="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-4">
                   <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-teal-500/10 font-mono text-sm text-teal-300">
-                    W{w.number}
+                    D{w.number}
                   </span>
                   <div>
                     <p className="flex flex-wrap items-center gap-2 font-display font-semibold">
@@ -144,7 +144,7 @@ export default function OpenSourcePage() {
         <CardContent className="grid gap-4 text-sm leading-relaxed text-ink-2 sm:grid-cols-3">
           <p>
             <span className="font-medium text-ink-1">Contribute.</span> Claim an
-            unpaid issue and merge your PR during a live Wave — the webhook
+            unpaid issue and merge your PR during a live Drift — the webhook
             registers on-chain activity points automatically.
           </p>
           <p>

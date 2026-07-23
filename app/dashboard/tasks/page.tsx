@@ -8,7 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TaskCard } from "@/components/tasks/TaskCard";
-import { TASK_CATEGORIES, tasks, type TaskFlow } from "@/lib/tasks/data";
+import { TASK_CATEGORIES, type TaskFlow } from "@/lib/tasks/data";
+import { useChainTasks } from "@/hooks";
 
 const workerFlow = [
   { step: "01", title: "Browse tasks", body: "Filter by category, time, and reward." },
@@ -21,6 +22,8 @@ export default function TasksPage() {
   const [flow, setFlow] = React.useState<"All" | TaskFlow>("All");
   const [category, setCategory] = React.useState("All");
   const [query, setQuery] = React.useState("");
+
+  const { tasks, isLoading: chainLoading } = useChainTasks();
 
   const filtered = tasks.filter((t) => {
     if (flow !== "All" && t.flow !== flow) return false;
@@ -37,7 +40,7 @@ export default function TasksPage() {
 
   return (
     <div className="space-y-8">
-      {/* Worker flow strip (Verko pattern) */}
+      
       <section
         aria-label="How tasks work"
         className="grid gap-px overflow-hidden rounded-xl border border-line-2 bg-line-1 sm:grid-cols-2 lg:grid-cols-4"
@@ -98,7 +101,16 @@ export default function TasksPage() {
       </div>
 
       {/* Grid */}
-      {filtered.length > 0 ? (
+      {chainLoading ? (
+        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          {[0, 1, 2].map((i) => (
+            <div
+              key={i}
+              className="h-64 animate-pulse rounded-xl border border-line-2 bg-surface-2"
+            />
+          ))}
+        </div>
+      ) : filtered.length > 0 ? (
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {filtered.map((t) => (
             <TaskCard key={t.id} task={t} />
@@ -107,10 +119,15 @@ export default function TasksPage() {
       ) : (
         <div className="flex flex-col items-center gap-3 rounded-xl border border-dashed border-line-3 py-16 text-center">
           <SearchX className="size-8 text-ink-3" />
-          <p className="font-display font-semibold">No tasks match these filters</p>
+          <p className="font-display font-semibold">
+            {tasks.length === 0
+              ? "No tasks on-chain yet"
+              : "No tasks match these filters"}
+          </p>
           <p className="max-w-sm text-sm text-ink-2">
-            Clear the search or switch category — or post the task you were
-            looking for.
+            {tasks.length === 0
+              ? "Be the first to post a task — the bounty locks in escrow on Fuji."
+              : "Clear the search or switch category — or post the task you were looking for."}
           </p>
           <Button asChild variant="outline" className="mt-2">
             <Link href="/dashboard/tasks/post">Post a task</Link>
