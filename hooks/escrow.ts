@@ -1,8 +1,3 @@
-/* ────────────────────────────────────────────────────────────────
-   TASKS DOMAIN — shared on-chain plumbing (Engine A only)
-   Contract handle, chain struct type, and the mapper that turns
-   SnowdriftTaskEscrow structs into the UI `Task` type.
-   ──────────────────────────────────────────────────────────────── */
 
 import { formatEther } from "viem";
 import { taskEscrowAbi } from "@/lib/contracts/taskEscrowAbi";
@@ -15,12 +10,11 @@ import {
 } from "@/lib/tasks/data";
 
 export const escrow = {
-  address: SNOWDRIFT_ADDRESSES.taskEscrow as `0x${string}`,
+  address: SNOWDRIFT_ADDRESSES.taskEscrow,
   abi: taskEscrowAbi,
 } as const;
 
-// Contract enum order: Open, InProgress, Completed, Cancelled,
-// Disputed, Extended, Past, Closed
+
 const CHAIN_STATUS: Record<number, TaskStatus | null> = {
   0: "Open",
   1: "InProgress",
@@ -84,9 +78,7 @@ export function toUiTask(t: ChainTask): Task | null {
     postedAt: "on-chain",
     estimatedHours: 0,
     skills: [],
-    // The contract escrows one bounty per worker slot rather than
-    // per-milestone; surface it as a single milestone so the detail
-    // page's timeline still renders.
+   
     milestones: [
       {
         id: 1,

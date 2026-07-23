@@ -23,7 +23,7 @@ const metadata = {
   name: "Snowdrift Protocol",
   description:
     "Dual-engine contribution hub on Avalanche — milestone escrow for freelance work and merge-triggered bounties for open source.",
-  url: "https://snowdrift.example.com", // must match your deployed domain
+  url: "https://snowdrift.example.com",
   icons: ["https://snowdrift.example.com/icon.png"],
 };
 
@@ -37,7 +37,7 @@ createAppKit({
   features: {
     analytics: false,
     email: false,
-    socials: false, // wallet-only connect; Web3Auth handles social identity separately
+    socials: false, 
   },
   themeMode: "dark",
   themeVariables: {

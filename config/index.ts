@@ -23,8 +23,27 @@ export const wagmiConfig = wagmiAdapter.wagmiConfig;
 
 /* ── Snowdrift deployments (Fuji, chainId 43113) ─────────────────── */
 
+/* ── Snowdrift deployments (Fuji, chainId 43113) ─────────────────── */
+
+function requireAddress(name: string, value: string | undefined) {
+  if (!value) throw new Error(`${name} is not set`);
+  if (!/^0x[a-fA-F0-9]{40}$/.test(value)) {
+    throw new Error(`${name} is not a valid address: ${value}`);
+  }
+  return value as `0x${string}`;
+}
+
 export const SNOWDRIFT_ADDRESSES = {
-  taskEscrow: "0xfa2FF5e050C02a899e8302fe2d78A646d4Ad124D",
-  reputation: "0x4742a10E05a4F82472ACCF3C369504fe3F39e4ED",
-  mockUsdc: "0xD98553415f535586CfA273D6cD6710F39ef94A96",
+  taskEscrow: requireAddress(
+    "NEXT_PUBLIC_TASK_ESCROW_ADDRESS",
+    process.env.NEXT_PUBLIC_TASK_ESCROW_ADDRESS
+  ),
+  reputation: requireAddress(
+    "NEXT_PUBLIC_REPUTATION_ADDRESS",
+    process.env.NEXT_PUBLIC_REPUTATION_ADDRESS
+  ),
+  mockUsdc: requireAddress(
+    "NEXT_PUBLIC_MOCK_USDC_ADDRESS",
+    process.env.NEXT_PUBLIC_MOCK_USDC_ADDRESS
+  ),
 } as const;
