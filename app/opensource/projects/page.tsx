@@ -33,7 +33,7 @@ export default function ProjectsPage() {
           </p>
         </div>
         <Button asChild variant="outline" className="shrink-0">
-          <Link href="/dashboard/opensource/issues">
+          <Link href="/opensource/issues">
             View all bounty issues <ArrowRight />
           </Link>
         </Button>

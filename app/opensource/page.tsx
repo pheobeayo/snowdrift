@@ -23,14 +23,14 @@ export default function OpenSourcePage() {
 
   return (
     <div className="space-y-8">
-      {/* Wave hero (Drips Wave pattern) */}
+      
       <section className="teal-grid-bg relative overflow-hidden rounded-2xl border border-line-2 bg-surface-1 p-6 sm:p-10">
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(ellipse_at_top_left,rgba(20,196,144,0.16),transparent_60%)]"
           aria-hidden
         />
         <Badge variant="points">
-          <Waves className="size-3" /> Snowdrift Waves
+          <Waves className="size-3" /> Snowdrift
         </Badge>
         <h2 className="mt-4 max-w-2xl font-display text-2xl font-bold tracking-tight sm:text-3xl">
           One-week contribution sprints across the Avalanche ecosystem.
@@ -38,17 +38,17 @@ export default function OpenSourcePage() {
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-2 sm:text-base">
           During a Drift, merged pull requests earn Points. Points set your
           weight in retro-active reward distributions and automated split
-          allocations; paid bounties settle instantly on merge, no admin in
+          allocations — paid bounties settle instantly on merge, no admin in
           the loop.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Button asChild>
-            <Link href="/dashboard/opensource/issues">
+            <Link href="/opensource/issues">
               Find an issue <ArrowRight />
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="/dashboard/opensource/projects">
+            <Link href="/opensource/projects">
               <FolderGit2 /> Tracked projects
             </Link>
           </Button>
@@ -77,7 +77,7 @@ export default function OpenSourcePage() {
         ))}
       </section>
 
-      {/* Wave programs */}
+      {/* Drift programs */}
       <section className="space-y-4">
         <h3 className="font-display text-lg font-semibold">Drift programs</h3>
         <div className="space-y-3">
@@ -150,7 +150,7 @@ export default function OpenSourcePage() {
           <p>
             <span className="font-medium text-ink-1">Accumulate weight.</span>{" "}
             Points determine your downstream share of retro-active funding
-            distributions when a Wave closes.
+            distributions when a Drift closes.
           </p>
           <p>
             <span className="font-medium text-ink-1">Streams split.</span>{" "}

@@ -5,13 +5,12 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 const titles: Array<[string, string]> = [
-  ["/dashboard/tasks/post", "Post a Task"],
-  ["/dashboard/tasks", "Tasks"],
-  ["/dashboard/opensource/projects", "Projects"],
-  ["/dashboard/opensource/issues", "Bounty Issues"],
-  ["/dashboard/opensource/rewards", "Points & Rewards"],
-  ["/dashboard/opensource", "Open Source"],
-  ["/dashboard", "Overview"],
+  ["/task/post", "Post a Task"],
+  ["/task", "Tasks"],
+  ["/opensource/projects", "Projects"],
+  ["/opensource/issues", "Bounty Issues"],
+  ["/opensource/rewards", "Points & Rewards"],
+  ["/opensource", "Drift Overview"],
 ];
 
 export function Topbar({ onMenu }: { onMenu: () => void }) {

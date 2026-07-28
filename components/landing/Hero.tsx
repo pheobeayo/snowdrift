@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import { Badge } from "@/components/ui/badge";
 
 const heroStats = [
   { value: "12.8k", label: "AVAX in escrow" },
@@ -18,6 +18,7 @@ export function Hero() {
         aria-hidden
       />
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+        <Badge className="mb-6">Avalanche C-Chain · Team 1 Mini Grant build</Badge>
         <h1 className="max-w-3xl font-display text-4xl font-bold leading-[1.06] tracking-tight sm:text-6xl">
           Two engines.{" "}
           <span className="text-teal-400 text-glow">One contribution hub.</span>
@@ -30,12 +31,12 @@ export function Hero() {
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg">
-            <Link href="/dashboard/tasks">
-              Find a task <ArrowRight />
+            <Link href="/task">
+              Enter Tasks <ArrowRight />
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link href="/dashboard/opensource">Open source</Link>
+            <Link href="/opensource">Enter Open Source</Link>
           </Button>
         </div>
         <dl className="mt-14 grid grid-cols-2 gap-6 sm:grid-cols-4">

@@ -11,7 +11,7 @@ export function Cta() {
       </h2>
       <div className="mt-8 flex justify-center">
         <Button asChild size="lg">
-          <Link href="/dashboard">
+          <Link href="/task">
             Open the dashboard <ArrowRight />
           </Link>
         </Button>

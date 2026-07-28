@@ -7,16 +7,16 @@ const engines = [
     eyebrow: "Engine A",
     title: "Freelance escrow",
     body: "Clients lock AVAX or USDC in a non-custodial contract. Funds release on milestone confirmations or 2-of-3 multisig — pro-bono work mints Soulbound badges instead.",
-    href: "/dashboard/tasks",
-    cta: "Browse tasks",
+    href: "/task",
+    cta: "Enter Tasks",
   },
   {
     icon: GitMerge,
     eyebrow: "Engine B",
     title: "Open-source hub",
     body: "Bounties sit on GitHub issue numbers. A merged PR triggers payout automatically — no admin in the loop. Unpaid merges earn Wave points for retro-active drops.",
-    href: "/dashboard/opensource",
-    cta: "Explore projects",
+    href: "/opensource",
+    cta: "Enter Open Source",
   },
 ];
 

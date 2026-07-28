@@ -13,22 +13,19 @@ export function Navbar() {
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-ink-2 md:flex">
-          <Link href="/dashboard/tasks" className="transition-colors hover:text-ink-1">
+          <Link href="/task" className="transition-colors hover:text-ink-1">
             Tasks
           </Link>
           <Link
-            href="/dashboard/opensource"
+            href="/opensource"
             className="transition-colors hover:text-ink-1"
           >
             Open source
           </Link>
-          <Link href="/dashboard" className="transition-colors hover:text-ink-1">
-            Dashboard
-          </Link>
         </nav>
         <Button asChild size="sm">
-          <Link href="/dashboard">
-            Launch app <ArrowRight />
+          <Link href="/task">
+            Enter Tasks <ArrowRight />
           </Link>
         </Button>
       </div>

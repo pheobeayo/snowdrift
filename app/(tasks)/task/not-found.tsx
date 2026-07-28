@@ -11,7 +11,7 @@ export default function TasksNotFound() {
         This task may have been completed and archived, or the link is wrong.
       </p>
       <Button asChild variant="outline" className="mt-2">
-        <Link href="/dashboard/tasks">Back to tasks</Link>
+        <Link href="/task">Back to tasks</Link>
       </Button>
     </div>
   );

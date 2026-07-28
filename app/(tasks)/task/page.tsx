@@ -40,7 +40,7 @@ export default function TasksPage() {
 
   return (
     <div className="space-y-8">
-      
+      {/* Worker flow strip (Verko pattern) */}
       <section
         aria-label="How tasks work"
         className="grid gap-px overflow-hidden rounded-xl border border-line-2 bg-line-1 sm:grid-cols-2 lg:grid-cols-4"
@@ -94,7 +94,7 @@ export default function TasksPage() {
         </Select>
 
         <Button asChild className="shrink-0">
-          <Link href="/dashboard/tasks/post">
+          <Link href="/task/post">
             <Plus /> Post a task
           </Link>
         </Button>
@@ -130,7 +130,7 @@ export default function TasksPage() {
               : "Clear the search or switch category — or post the task you were looking for."}
           </p>
           <Button asChild variant="outline" className="mt-2">
-            <Link href="/dashboard/tasks/post">Post a task</Link>
+            <Link href="/task/post">Post a task</Link>
           </Button>
         </div>
       )}

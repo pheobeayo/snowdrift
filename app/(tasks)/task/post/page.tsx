@@ -15,7 +15,7 @@ import { postTaskSchema, type PostTaskForm } from "@/components/tasks/post/schem
 import { formatEther, parseEther } from "viem";
 import type { TaskCategory } from "@/lib/tasks/data";
 
-
+/** Headroom for gas on Fuji — createTask writes a large struct (~300k gas). */
 const GAS_BUFFER = parseEther("0.01");
 
 export default function PostTaskPage() {
@@ -45,13 +45,15 @@ export default function PostTaskPage() {
       return;
     }
 
-   
+    // The contract escrows a single bounty per worker slot, so the
+    // milestone amounts are summed into one total deposit.
     const total =
       data.flow === "Paid"
         ? data.milestones.reduce((sum, m) => sum + m.amount, 0)
         : 0;
 
-   
+    // Pre-flight balance check: even a pro-bono task (0 AVAX bounty)
+    // needs gas, so catch an empty wallet before opening the wallet modal.
     if (balance) {
       const needed = parseEther(String(total)) + GAS_BUFFER;
       if (balance.value < needed) {
@@ -81,7 +83,7 @@ export default function PostTaskPage() {
           ? `Task posted — ${total} AVAX locked in escrow`
           : "Pro-bono task posted on-chain"
       );
-      router.push("/dashboard/tasks");
+      router.push("/task");
     } catch (err) {
       toast.error("Transaction failed", {
         description: err instanceof Error ? err.message : "Please try again.",
