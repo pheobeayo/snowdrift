@@ -4,3 +4,10 @@ out
 .env*.local
 *.tsbuildinfo
 next-env.d.ts
+
+# Yarn Berry (node-modules linker)
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+.pnp.*
+.yarn/install-state.gz

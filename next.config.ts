@@ -1,18 +1,9 @@
 import type { NextConfig } from "next";
+import path from "path";
 
-/**
- * wagmi v3 ships optional Tempo/Coinbase-CDP connector code that imports
- * `@x402/*` and `accounts` — packages we don't use (and whose Solana peer
- * deps conflict). Alias them to an empty module for both Turbopack and
- * webpack so builds resolve cleanly.
- */
-const optionalWagmiStubs = {
-  "@x402/core/client": "./lib/empty-module.ts",
-  "@x402/evm": "./lib/empty-module.ts",
-  "@x402/evm/exact/client": "./lib/empty-module.ts",
-  "@x402/svm/exact/client": "./lib/empty-module.ts",
-  accounts: "./lib/empty-module.ts",
-};
+
+const EMPTY_ABS = path.resolve(__dirname, "lib/empty-module.ts");
+const EMPTY_REL = "./lib/empty-module.ts"; // Turbopack wants a relative target
 
 const nextConfig: NextConfig = {
   images: {
@@ -21,18 +12,27 @@ const nextConfig: NextConfig = {
     ],
   },
   turbopack: {
-    resolveAlias: optionalWagmiStubs,
+    // Pin the workspace root so a stray lockfile in a parent directory
+    // (e.g. ~/pnpm-lock.yaml) can't make Next infer the wrong root.
+    root: __dirname,
+    resolveAlias: {
+      // One wildcard covers every @x402 subpath (core/*, evm/*, svm/*, …).
+      "@x402/*": EMPTY_REL,
+      accounts: EMPTY_REL,
+    },
   },
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      ...Object.fromEntries(
-        Object.entries(optionalWagmiStubs).map(([k, v]) => [
-          k,
-          require("path").resolve(__dirname, v),
-        ])
-      ),
+      accounts: EMPTY_ABS,
     };
+    config.plugins = config.plugins ?? [];
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const webpack = require("webpack");
+    // Catch every @x402/* specifier (bare scope + all subpaths).
+    config.plugins.push(
+      new webpack.NormalModuleReplacementPlugin(/^@x402(\/|$)/, EMPTY_ABS)
+    );
     return config;
   },
 };
