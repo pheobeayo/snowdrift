@@ -1,6 +1,6 @@
-# Snowdrift Protocol — Frontend
+# Snowdrift
 
-Dual-engine contribution hub on Avalanche: milestone-locked freelance escrows (Engine A) and an open-source bounty/points engine following the Drips Wave model (Engine B).
+Dual-engine contribution hub on Avalanche: milestone-locked freelance escrows (Engine A) and an open-source bounty/points engine (Engine B).
 
 ## Stack
 
@@ -48,8 +48,5 @@ The two engines never import from each other — `lib/tasks` and `lib/opensource
 
 ## Design tokens
 
-TrustLance palette: teal accents (`#14c490` / `#0d9e75`) on green-tinted near-black surfaces. Fonts: Syne (display), DM Sans (body), DM Mono (numbers/addresses). All tokens live in `app/globals.css` under `@theme`.
+Teal accents (`#14c490` / `#0d9e75`) on green-tinted near-black surfaces. Fonts: Syne (display), DM Sans (body), DM Mono (numbers/addresses). All tokens live in `app/globals.css` under `@theme`.
 
-## Wiring it up
-
-Replace `lib/tasks/data.ts` and `lib/opensource/data.ts` with hooks against `EscrowManager.sol` / `ContributionStreamer.sol` (wagmi/viem) and the GitHub webhook backend. The UI reads only from those modules, so swapping mock data for live reads is contained.
