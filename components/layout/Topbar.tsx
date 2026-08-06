@@ -8,8 +8,7 @@ const titles: Array<[string, string]> = [
   ["/task/post", "Post a Task"],
   ["/task", "Tasks"],
   ["/opensource/projects", "Projects"],
-  ["/opensource/issues", "Bounty Issues"],
-  ["/opensource/rewards", "Points & Rewards"],
+  ["/opensource/issues", "Issues"],
   ["/opensource", "Drift Overview"],
 ];
 

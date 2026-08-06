@@ -18,8 +18,7 @@ import { cn } from "@/lib/utils";
 const links = [
   { label: "Drift Overview", href: "/opensource", icon: Waves, exact: true },
   { label: "Projects", href: "/opensource/projects", icon: FolderGit2, exact: true },
-  { label: "Bounty Issues", href: "/opensource/issues", icon: Ticket, exact: true },
-  { label: "Points & Rewards", href: "/opensource/rewards", icon: Award, exact: true },
+  { label: "Issues", href: "/opensource/issues", icon: Ticket, exact: true },
 ];
 
 function NavContent({ onNavigate }: { onNavigate?: () => void }) {
@@ -78,10 +77,10 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
         </EngineSwitchLink>
       </nav>
 
-      <div className="space-y-2 border-t border-sidebar-border p-4">
+      {/* <div className="space-y-2 border-t border-sidebar-border p-4">
         <GitHubCard />
         <GitHubLogoutButton onAfter={onNavigate} />
-      </div>
+      </div> */}
     </div>
   );
 }
