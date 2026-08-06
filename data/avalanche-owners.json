@@ -1,0 +1,1731 @@
+{
+  "generated_note": "GENERATED FILE - do not edit by hand. Run: yarn ecosystem:sync",
+  "generated_at": "2026-08-06T02:18:27.813Z",
+  "source": "electric-capital/crypto-ecosystems (Open Dev Data)",
+  "root": "Avalanche",
+  "sub_ecosystems": 329,
+  "total_owners_in_taxonomy": 6051,
+  "total_repos_in_taxonomy": 11692,
+  "min_repos_threshold": 6,
+  "owners": [
+    {
+      "owner": "ava-labs",
+      "repos": 144,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "horizontalsystems",
+      "repos": 112,
+      "project": "Be Unstoppable",
+      "ecosystems": [
+        "Be Unstoppable"
+      ]
+    },
+    {
+      "owner": "interest-protocol",
+      "repos": 93,
+      "project": "Interest Protocol",
+      "ecosystems": [
+        "Interest Protocol"
+      ]
+    },
+    {
+      "owner": "the-poolz",
+      "repos": 91,
+      "project": "Poolz",
+      "ecosystems": [
+        "Poolz"
+      ]
+    },
+    {
+      "owner": "crossmint",
+      "repos": 89,
+      "project": "Crossmint",
+      "ecosystems": [
+        "Crossmint"
+      ]
+    },
+    {
+      "owner": "balancer",
+      "repos": 82,
+      "project": "Balancer",
+      "ecosystems": [
+        "Balancer",
+        "Balancer Maxis"
+      ]
+    },
+    {
+      "owner": "flare-foundation",
+      "repos": 66,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "deusfinance",
+      "repos": 63,
+      "project": "Deus Finance",
+      "ecosystems": [
+        "Deus Finance"
+      ]
+    },
+    {
+      "owner": "movementlabsxyz",
+      "repos": 62,
+      "project": "Movement",
+      "ecosystems": [
+        "Movement"
+      ]
+    },
+    {
+      "owner": "chain4travel",
+      "repos": 59,
+      "project": "Chain4Travel",
+      "ecosystems": [
+        "Chain4Travel"
+      ]
+    },
+    {
+      "owner": "dodoex",
+      "repos": 58,
+      "project": "DODO",
+      "ecosystems": [
+        "DODO"
+      ]
+    },
+    {
+      "owner": "mirrorworld-universe",
+      "repos": 57,
+      "project": "Interest Protocol",
+      "ecosystems": [
+        "Interest Protocol"
+      ]
+    },
+    {
+      "owner": "liquality",
+      "repos": 57,
+      "project": "Liquality",
+      "ecosystems": [
+        "Liquality"
+      ]
+    },
+    {
+      "owner": "axiacoin",
+      "repos": 55,
+      "project": "axia-coin",
+      "ecosystems": [
+        "axia-coin"
+      ]
+    },
+    {
+      "owner": "beefyfinance",
+      "repos": 55,
+      "project": "Beefy.Finance",
+      "ecosystems": [
+        "Beefy.Finance"
+      ]
+    },
+    {
+      "owner": "orderlynetwork",
+      "repos": 53,
+      "project": "Orderly Network",
+      "ecosystems": [
+        "Orderly Network"
+      ]
+    },
+    {
+      "owner": "anomalyfi",
+      "repos": 52,
+      "project": "NodeKit",
+      "ecosystems": [
+        "NodeKit"
+      ]
+    },
+    {
+      "owner": "humanode-network",
+      "repos": 51,
+      "project": "Humanode",
+      "ecosystems": [
+        "Humanode"
+      ]
+    },
+    {
+      "owner": "multisig-labs",
+      "repos": 50,
+      "project": "Multisig Labs",
+      "ecosystems": [
+        "Multisig Labs"
+      ]
+    },
+    {
+      "owner": "lfj-gg",
+      "repos": 50,
+      "project": "LFJ",
+      "ecosystems": [
+        "LFJ"
+      ]
+    },
+    {
+      "owner": "luxfi",
+      "repos": 49,
+      "project": "LUX Defi",
+      "ecosystems": [
+        "LUX Defi"
+      ]
+    },
+    {
+      "owner": "fraxfinance",
+      "repos": 49,
+      "project": "Frax",
+      "ecosystems": [
+        "Frax"
+      ]
+    },
+    {
+      "owner": "buildonbeam",
+      "repos": 47,
+      "project": "BeamOS",
+      "ecosystems": [
+        "BeamOS",
+        "Merit Circle"
+      ]
+    },
+    {
+      "owner": "tornadocash",
+      "repos": 47,
+      "project": "Tornado Cash",
+      "ecosystems": [
+        "Tornado Cash"
+      ]
+    },
+    {
+      "owner": "ldclabs",
+      "repos": 47,
+      "project": "ldclabs",
+      "ecosystems": [
+        "ldclabs"
+      ]
+    },
+    {
+      "owner": "olympusdao",
+      "repos": 46,
+      "project": "Olympus DAO",
+      "ecosystems": [
+        "Olympus DAO"
+      ]
+    },
+    {
+      "owner": "nightly-labs",
+      "repos": 44,
+      "project": "Movement",
+      "ecosystems": [
+        "Movement",
+        "Nightly Labs"
+      ]
+    },
+    {
+      "owner": "openlawteam",
+      "repos": 44,
+      "project": "Open Law",
+      "ecosystems": [
+        "Open Law"
+      ]
+    },
+    {
+      "owner": "anyswap",
+      "repos": 44,
+      "project": "Multichain (Anyswap)",
+      "ecosystems": [
+        "Multichain (Anyswap)"
+      ]
+    },
+    {
+      "owner": "dantenetwork",
+      "repos": 44,
+      "project": "Dante Network",
+      "ecosystems": [
+        "Dante Network"
+      ]
+    },
+    {
+      "owner": "openfort-xyz",
+      "repos": 43,
+      "project": "Openfort",
+      "ecosystems": [
+        "Openfort"
+      ]
+    },
+    {
+      "owner": "sifchain",
+      "repos": 41,
+      "project": "Sifchain",
+      "ecosystems": [
+        "Sifchain"
+      ]
+    },
+    {
+      "owner": "trustfractal",
+      "repos": 41,
+      "project": "Fractal",
+      "ecosystems": [
+        "Fractal"
+      ]
+    },
+    {
+      "owner": "muon-protocol",
+      "repos": 41,
+      "project": "Muon Protocol",
+      "ecosystems": [
+        "Muon Protocol"
+      ]
+    },
+    {
+      "owner": "dinngo",
+      "repos": 39,
+      "project": "Furucombo",
+      "ecosystems": [
+        "Furucombo"
+      ]
+    },
+    {
+      "owner": "instadapp",
+      "repos": 38,
+      "project": "InstaDApp",
+      "ecosystems": [
+        "InstaDApp"
+      ]
+    },
+    {
+      "owner": "irys-xyz",
+      "repos": 37,
+      "project": "Irys (prev Bundlr)",
+      "ecosystems": [
+        "Irys (prev Bundlr)"
+      ]
+    },
+    {
+      "owner": "0xeigenlabs",
+      "repos": 37,
+      "project": "Eigen Network",
+      "ecosystems": [
+        "Eigen Network"
+      ]
+    },
+    {
+      "owner": "trusttoken",
+      "repos": 37,
+      "project": "TrueUSD",
+      "ecosystems": [
+        "TrueUSD"
+      ]
+    },
+    {
+      "owner": "float-capital",
+      "repos": 36,
+      "project": "Float Capital",
+      "ecosystems": [
+        "Float Capital"
+      ]
+    },
+    {
+      "owner": "koii-network",
+      "repos": 35,
+      "project": "Koii Network",
+      "ecosystems": [
+        "Koii Network"
+      ]
+    },
+    {
+      "owner": "meld-labs",
+      "repos": 34,
+      "project": "Meld",
+      "ecosystems": [
+        "Meld"
+      ]
+    },
+    {
+      "owner": "arkanenetwork",
+      "repos": 34,
+      "project": "Venly",
+      "ecosystems": [
+        "Venly"
+      ]
+    },
+    {
+      "owner": "venly",
+      "repos": 34,
+      "project": "Venly",
+      "ecosystems": [
+        "Venly"
+      ]
+    },
+    {
+      "owner": "dypfinance",
+      "repos": 34,
+      "project": "DeFi Yield Protocol",
+      "ecosystems": [
+        "DeFi Yield Protocol"
+      ]
+    },
+    {
+      "owner": "pangolindex",
+      "repos": 34,
+      "project": "Pangolin",
+      "ecosystems": [
+        "Pangolin"
+      ]
+    },
+    {
+      "owner": "timeleaplabs",
+      "repos": 31,
+      "project": "Kenshi",
+      "ecosystems": [
+        "Kenshi"
+      ]
+    },
+    {
+      "owner": "snowball-finance",
+      "repos": 30,
+      "project": "Snowball",
+      "ecosystems": [
+        "Snowball",
+        "Snowball Finance"
+      ]
+    },
+    {
+      "owner": "creamfi",
+      "repos": 30,
+      "project": "Cream Finance",
+      "ecosystems": [
+        "Cream Finance"
+      ]
+    },
+    {
+      "owner": "lasthyphen",
+      "repos": 29,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "impossiblefinance",
+      "repos": 28,
+      "project": "Impossible Finance",
+      "ecosystems": [
+        "Impossible Finance"
+      ]
+    },
+    {
+      "owner": "0xhashstack",
+      "repos": 28,
+      "project": "Hashstack",
+      "ecosystems": [
+        "Hashstack"
+      ]
+    },
+    {
+      "owner": "metalblockchain",
+      "repos": 27,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "buidlhub",
+      "repos": 27,
+      "project": "Dexible",
+      "ecosystems": [
+        "Dexible"
+      ]
+    },
+    {
+      "owner": "balancermaxis",
+      "repos": 26,
+      "project": "Balancer Maxis",
+      "ecosystems": [
+        "Balancer Maxis"
+      ]
+    },
+    {
+      "owner": "kredeum",
+      "repos": 26,
+      "project": "Kredeum",
+      "ecosystems": [
+        "Kredeum"
+      ]
+    },
+    {
+      "owner": "abracadabra-money",
+      "repos": 26,
+      "project": "Abracadabra",
+      "ecosystems": [
+        "Abracadabra"
+      ]
+    },
+    {
+      "owner": "immunefi-team",
+      "repos": 26,
+      "project": "Immunefi",
+      "ecosystems": [
+        "Immunefi"
+      ]
+    },
+    {
+      "owner": "razorlabsorg",
+      "repos": 25,
+      "project": "Razor Labs",
+      "ecosystems": [
+        "Razor Labs"
+      ]
+    },
+    {
+      "owner": "grolabs",
+      "repos": 25,
+      "project": "Gro",
+      "ecosystems": [
+        "Gro"
+      ]
+    },
+    {
+      "owner": "mystikonetwork",
+      "repos": 25,
+      "project": "Mystiko",
+      "ecosystems": [
+        "Mystiko"
+      ]
+    },
+    {
+      "owner": "ribbon-finance",
+      "repos": 25,
+      "project": "Ribbon Finance",
+      "ecosystems": [
+        "Ribbon Finance"
+      ]
+    },
+    {
+      "owner": "complusnetwork",
+      "repos": 23,
+      "project": "Complus Network",
+      "ecosystems": [
+        "Complus Network"
+      ]
+    },
+    {
+      "owner": "defi-helper",
+      "repos": 23,
+      "project": "DeFiHelper",
+      "ecosystems": [
+        "DeFiHelper"
+      ]
+    },
+    {
+      "owner": "88mphapp",
+      "repos": 22,
+      "project": "88mph",
+      "ecosystems": [
+        "88mph"
+      ]
+    },
+    {
+      "owner": "stakedao",
+      "repos": 22,
+      "project": "StakeDAO",
+      "ecosystems": [
+        "StakeDAO"
+      ]
+    },
+    {
+      "owner": "elkfinance",
+      "repos": 21,
+      "project": "Elk Finance",
+      "ecosystems": [
+        "Elk Finance"
+      ]
+    },
+    {
+      "owner": "term-finance",
+      "repos": 21,
+      "project": "Term Finance",
+      "ecosystems": [
+        "Term Finance"
+      ]
+    },
+    {
+      "owner": "onblockio",
+      "repos": 20,
+      "project": "Ghost Market",
+      "ecosystems": [
+        "Ghost Market"
+      ]
+    },
+    {
+      "owner": "ashavalanche",
+      "repos": 20,
+      "project": "Ash Avalanche",
+      "ecosystems": [
+        "Ash Avalanche"
+      ]
+    },
+    {
+      "owner": "numbersprotocol",
+      "repos": 20,
+      "project": "NumbersProtocol",
+      "ecosystems": [
+        "NumbersProtocol"
+      ]
+    },
+    {
+      "owner": "apex-protocol",
+      "repos": 20,
+      "project": "ApeX Protocol",
+      "ecosystems": [
+        "ApeX Protocol"
+      ]
+    },
+    {
+      "owner": "aperture-finance",
+      "repos": 20,
+      "project": "Aperture Finance",
+      "ecosystems": [
+        "Aperture Finance"
+      ]
+    },
+    {
+      "owner": "jelly-swap",
+      "repos": 20,
+      "project": "Jelly Swap",
+      "ecosystems": [
+        "Jelly Swap"
+      ]
+    },
+    {
+      "owner": "mayan-finance",
+      "repos": 18,
+      "project": "Mayan Finance",
+      "ecosystems": [
+        "Mayan Finance"
+      ]
+    },
+    {
+      "owner": "vesperfi",
+      "repos": 18,
+      "project": "Vesper Finance",
+      "ecosystems": [
+        "Vesper Finance"
+      ]
+    },
+    {
+      "owner": "alphafinancelab",
+      "repos": 18,
+      "project": "Alpha Finance Lab",
+      "ecosystems": [
+        "Alpha Finance Lab",
+        "Alpha Homora"
+      ]
+    },
+    {
+      "owner": "toinounet21",
+      "repos": 17,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "eywa-protocol",
+      "repos": 17,
+      "project": "EYWA Protocol",
+      "ecosystems": [
+        "EYWA Protocol"
+      ]
+    },
+    {
+      "owner": "bubble-protocol",
+      "repos": 17,
+      "project": "Bubble Protocol",
+      "ecosystems": [
+        "Bubble Protocol"
+      ]
+    },
+    {
+      "owner": "superform-xyz",
+      "repos": 17,
+      "project": "Superform",
+      "ecosystems": [
+        "Superform"
+      ]
+    },
+    {
+      "owner": "andinadefi",
+      "repos": 17,
+      "project": "Andina Defi",
+      "ecosystems": [
+        "Andina Defi"
+      ]
+    },
+    {
+      "owner": "ampleforth",
+      "repos": 17,
+      "project": "Ampleforth",
+      "ecosystems": [
+        "Ampleforth"
+      ]
+    },
+    {
+      "owner": "simplefi-finance",
+      "repos": 16,
+      "project": "simplefi",
+      "ecosystems": [
+        "simplefi"
+      ]
+    },
+    {
+      "owner": "e-money",
+      "repos": 16,
+      "project": "E-Money",
+      "ecosystems": [
+        "E-Money"
+      ]
+    },
+    {
+      "owner": "layerswap",
+      "repos": 15,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "zerodao-finance",
+      "repos": 15,
+      "project": "Zero Protocol",
+      "ecosystems": [
+        "Zero Protocol"
+      ]
+    },
+    {
+      "owner": "heroesofnft",
+      "repos": 15,
+      "project": "Heroes of NFT",
+      "ecosystems": [
+        "Heroes of NFT"
+      ]
+    },
+    {
+      "owner": "avvydomains",
+      "repos": 15,
+      "project": "Avvy Domains",
+      "ecosystems": [
+        "Avvy Domains"
+      ]
+    },
+    {
+      "owner": "forward-x",
+      "repos": 15,
+      "project": "ForwardX",
+      "ecosystems": [
+        "ForwardX"
+      ]
+    },
+    {
+      "owner": "swapsicledex",
+      "repos": 15,
+      "project": "Swapsicle",
+      "ecosystems": [
+        "Swapsicle"
+      ]
+    },
+    {
+      "owner": "betswirl",
+      "repos": 15,
+      "project": "Bet Swirl",
+      "ecosystems": [
+        "Bet Swirl"
+      ]
+    },
+    {
+      "owner": "xy-finance",
+      "repos": 14,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "partyswapdex",
+      "repos": 14,
+      "project": "PartySwap",
+      "ecosystems": [
+        "PartySwap"
+      ]
+    },
+    {
+      "owner": "talent-index",
+      "repos": 14,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "aurafinance",
+      "repos": 14,
+      "project": "Aura Finance",
+      "ecosystems": [
+        "Aura Finance"
+      ]
+    },
+    {
+      "owner": "nuklai",
+      "repos": 14,
+      "project": "Nuklai",
+      "ecosystems": [
+        "Nuklai"
+      ]
+    },
+    {
+      "owner": "cerbyfinance",
+      "repos": 14,
+      "project": "Cerby Finance",
+      "ecosystems": [
+        "Cerby Finance"
+      ]
+    },
+    {
+      "owner": "capx-fi",
+      "repos": 14,
+      "project": "CapxFi",
+      "ecosystems": [
+        "CapxFi"
+      ]
+    },
+    {
+      "owner": "capx-ai",
+      "repos": 14,
+      "project": "CapxFi",
+      "ecosystems": [
+        "CapxFi"
+      ]
+    },
+    {
+      "owner": "farmersonlyfi",
+      "repos": 14,
+      "project": "FarmersOnlyFi",
+      "ecosystems": [
+        "FarmersOnlyFi"
+      ]
+    },
+    {
+      "owner": "stichting-allianceblock-foundation",
+      "repos": 14,
+      "project": "AllianceBlock",
+      "ecosystems": [
+        "AllianceBlock"
+      ]
+    },
+    {
+      "owner": "gmx-io",
+      "repos": 13,
+      "project": "GMX",
+      "ecosystems": [
+        "GMX"
+      ]
+    },
+    {
+      "owner": "degis-insurance",
+      "repos": 13,
+      "project": "Degis",
+      "ecosystems": [
+        "Degis"
+      ]
+    },
+    {
+      "owner": "suzaku-network",
+      "repos": 13,
+      "project": "Suzaku",
+      "ecosystems": [
+        "Suzaku"
+      ]
+    },
+    {
+      "owner": "nikola43",
+      "repos": 13,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "folks-finance",
+      "repos": 13,
+      "project": "Folks Finance",
+      "ecosystems": [
+        "Folks Finance"
+      ]
+    },
+    {
+      "owner": "dos",
+      "repos": 13,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "contango-xyz",
+      "repos": 13,
+      "project": "Contango",
+      "ecosystems": [
+        "Contango"
+      ]
+    },
+    {
+      "owner": "ironfinance",
+      "repos": 13,
+      "project": "Iron Finance",
+      "ecosystems": [
+        "Iron Finance"
+      ]
+    },
+    {
+      "owner": "zeroexchange",
+      "repos": 13,
+      "project": "0.exchange",
+      "ecosystems": [
+        "0.exchange"
+      ]
+    },
+    {
+      "owner": "yieldyak",
+      "repos": 12,
+      "project": "Yield Yak",
+      "ecosystems": [
+        "Yield Yak"
+      ]
+    },
+    {
+      "owner": "olive-cash",
+      "repos": 12,
+      "project": "Olive Cash",
+      "ecosystems": [
+        "Olive Cash"
+      ]
+    },
+    {
+      "owner": "aori-io",
+      "repos": 12,
+      "project": "Aori",
+      "ecosystems": [
+        "Aori"
+      ]
+    },
+    {
+      "owner": "aori-graveyard",
+      "repos": 12,
+      "project": "Aori",
+      "ecosystems": [
+        "Aori"
+      ]
+    },
+    {
+      "owner": "nftrade",
+      "repos": 12,
+      "project": "NFTrade",
+      "ecosystems": [
+        "NFTrade"
+      ]
+    },
+    {
+      "owner": "lydiafinance",
+      "repos": 11,
+      "project": "Lydia",
+      "ecosystems": [
+        "Lydia"
+      ]
+    },
+    {
+      "owner": "derachain",
+      "repos": 11,
+      "project": "Derachain",
+      "ecosystems": [
+        "Derachain"
+      ]
+    },
+    {
+      "owner": "mux-world",
+      "repos": 11,
+      "project": "MUX Protocol",
+      "ecosystems": [
+        "MUX Protocol"
+      ]
+    },
+    {
+      "owner": "sweeprfi",
+      "repos": 11,
+      "project": "SweeprFi",
+      "ecosystems": [
+        "SweeprFi"
+      ]
+    },
+    {
+      "owner": "gopluslabs",
+      "repos": 11,
+      "project": "GoPlus",
+      "ecosystems": [
+        "GoPlus"
+      ]
+    },
+    {
+      "owner": "emdx-dex",
+      "repos": 11,
+      "project": "EMDX",
+      "ecosystems": [
+        "EMDX"
+      ]
+    },
+    {
+      "owner": "rugenerous",
+      "repos": 11,
+      "project": "RUGenerous",
+      "ecosystems": [
+        "RUGenerous"
+      ]
+    },
+    {
+      "owner": "niftyx",
+      "repos": 11,
+      "project": "Niftyx",
+      "ecosystems": [
+        "Niftyx"
+      ]
+    },
+    {
+      "owner": "moremoney-finance",
+      "repos": 10,
+      "project": "MoreMoney",
+      "ecosystems": [
+        "MoreMoney"
+      ]
+    },
+    {
+      "owner": "kamalbuilds",
+      "repos": 10,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "containerman17",
+      "repos": 10,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "mintlify-atlas",
+      "repos": 10,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "fragmentsorg",
+      "repos": 10,
+      "project": "Ampleforth",
+      "ecosystems": [
+        "Ampleforth"
+      ]
+    },
+    {
+      "owner": "celenium-io",
+      "repos": 10,
+      "project": "Celenium",
+      "ecosystems": [
+        "Celenium"
+      ]
+    },
+    {
+      "owner": "ludex-labs",
+      "repos": 10,
+      "project": "Ludex Labs",
+      "ecosystems": [
+        "Ludex Labs"
+      ]
+    },
+    {
+      "owner": "pinedefi",
+      "repos": 10,
+      "project": "Pine Finance",
+      "ecosystems": [
+        "Pine Finance"
+      ]
+    },
+    {
+      "owner": "rango-exchange",
+      "repos": 10,
+      "project": "Rango Exchange",
+      "ecosystems": [
+        "Rango Exchange"
+      ]
+    },
+    {
+      "owner": "anima-protocol",
+      "repos": 10,
+      "project": "Anima Protocol",
+      "ecosystems": [
+        "Anima Protocol"
+      ]
+    },
+    {
+      "owner": "liminal-market",
+      "repos": 10,
+      "project": "Liminal Market",
+      "ecosystems": [
+        "Liminal Market"
+      ]
+    },
+    {
+      "owner": "vaporfi",
+      "repos": 10,
+      "project": "VaporDex",
+      "ecosystems": [
+        "VaporDex"
+      ]
+    },
+    {
+      "owner": "radioshackswap",
+      "repos": 10,
+      "project": "RadioShack Swap",
+      "ecosystems": [
+        "RadioShack Swap"
+      ]
+    },
+    {
+      "owner": "monopayments",
+      "repos": 10,
+      "project": "MonoPayments",
+      "ecosystems": [
+        "MonoPayments"
+      ]
+    },
+    {
+      "owner": "insurace-protocol",
+      "repos": 10,
+      "project": "InsurAce",
+      "ecosystems": [
+        "InsurAce"
+      ]
+    },
+    {
+      "owner": "ohfinance",
+      "repos": 10,
+      "project": "Oh Finance",
+      "ecosystems": [
+        "Oh Finance"
+      ]
+    },
+    {
+      "owner": "dexalot",
+      "repos": 9,
+      "project": "Dexalot",
+      "ecosystems": [
+        "Dexalot"
+      ]
+    },
+    {
+      "owner": "sector-fi",
+      "repos": 9,
+      "project": "Scion",
+      "ecosystems": [
+        "Scion"
+      ]
+    },
+    {
+      "owner": "geodefi",
+      "repos": 9,
+      "project": "Geode",
+      "ecosystems": [
+        "Geode"
+      ]
+    },
+    {
+      "owner": "crowdbotics-apps",
+      "repos": 9,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "relayerfi",
+      "repos": 9,
+      "project": "Sherry",
+      "ecosystems": [
+        "Sherry"
+      ]
+    },
+    {
+      "owner": "brokkrfinance",
+      "repos": 9,
+      "project": "BrokkrFinance",
+      "ecosystems": [
+        "BrokkrFinance"
+      ]
+    },
+    {
+      "owner": "mofalabs",
+      "repos": 9,
+      "project": "Interest Protocol",
+      "ecosystems": [
+        "Interest Protocol"
+      ]
+    },
+    {
+      "owner": "glitter-finance",
+      "repos": 9,
+      "project": "Glitter Finance",
+      "ecosystems": [
+        "Glitter Finance"
+      ]
+    },
+    {
+      "owner": "tender-finance",
+      "repos": 9,
+      "project": "Tender Finance",
+      "ecosystems": [
+        "Tender Finance"
+      ]
+    },
+    {
+      "owner": "hubble-exchange",
+      "repos": 9,
+      "project": "Hubble Exchange",
+      "ecosystems": [
+        "Hubble Exchange"
+      ]
+    },
+    {
+      "owner": "caskprotocol",
+      "repos": 9,
+      "project": "Cask",
+      "ecosystems": [
+        "Cask"
+      ]
+    },
+    {
+      "owner": "yay-games",
+      "repos": 9,
+      "project": "YAY Games",
+      "ecosystems": [
+        "YAY Games"
+      ]
+    },
+    {
+      "owner": "marginswap",
+      "repos": 9,
+      "project": "Marginswap",
+      "ecosystems": [
+        "Marginswap"
+      ]
+    },
+    {
+      "owner": "sherpa-cash",
+      "repos": 9,
+      "project": "Sherpa Cash",
+      "ecosystems": [
+        "Sherpa Cash"
+      ]
+    },
+    {
+      "owner": "pinkdiamond1",
+      "repos": 8,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "oavax",
+      "repos": 8,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "evoverses",
+      "repos": 8,
+      "project": "Evo Verses",
+      "ecosystems": [
+        "Evo Verses"
+      ]
+    },
+    {
+      "owner": "unchase-subgraphs",
+      "repos": 8,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "steadefi",
+      "repos": 8,
+      "project": "Steadefi",
+      "ecosystems": [
+        "Steadefi"
+      ]
+    },
+    {
+      "owner": "panorama-block",
+      "repos": 8,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "tangle-network",
+      "repos": 8,
+      "project": "Tangle",
+      "ecosystems": [
+        "Tangle"
+      ]
+    },
+    {
+      "owner": "kuzminklk",
+      "repos": 8,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "stable-jack",
+      "repos": 8,
+      "project": "StableJack",
+      "ecosystems": [
+        "StableJack"
+      ]
+    },
+    {
+      "owner": "backed-fi",
+      "repos": 8,
+      "project": "Backed Finance",
+      "ecosystems": [
+        "Backed Finance"
+      ]
+    },
+    {
+      "owner": "relaychain",
+      "repos": 8,
+      "project": "RelayChain",
+      "ecosystems": [
+        "RelayChain"
+      ]
+    },
+    {
+      "owner": "the-gas-station",
+      "repos": 8,
+      "project": "The Gas Station",
+      "ecosystems": [
+        "The Gas Station"
+      ]
+    },
+    {
+      "owner": "mole-fi",
+      "repos": 8,
+      "project": "Mole Finance",
+      "ecosystems": [
+        "Mole Finance"
+      ]
+    },
+    {
+      "owner": "zoofarming",
+      "repos": 8,
+      "project": "ZooKeeper",
+      "ecosystems": [
+        "ZooKeeper"
+      ]
+    },
+    {
+      "owner": "pantherprotocol",
+      "repos": 8,
+      "project": "Panther Protocol",
+      "ecosystems": [
+        "Panther Protocol"
+      ]
+    },
+    {
+      "owner": "idexo",
+      "repos": 8,
+      "project": "Idexo",
+      "ecosystems": [
+        "Idexo"
+      ]
+    },
+    {
+      "owner": "truefi-protocol",
+      "repos": 8,
+      "project": "TrueUSD",
+      "ecosystems": [
+        "TrueUSD"
+      ]
+    },
+    {
+      "owner": "argon-foundation",
+      "repos": 8,
+      "project": "Argon",
+      "ecosystems": [
+        "Argon"
+      ]
+    },
+    {
+      "owner": "snowballmoney",
+      "repos": 8,
+      "project": "Snowball.money",
+      "ecosystems": [
+        "Snowball.money"
+      ]
+    },
+    {
+      "owner": "cgcardona",
+      "repos": 7,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "rodrigovillar",
+      "repos": 7,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "mashharuki",
+      "repos": 7,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "sirilmp",
+      "repos": 7,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "amaansayyad",
+      "repos": 7,
+      "project": "Dunkverse",
+      "ecosystems": [
+        "Dunkverse"
+      ]
+    },
+    {
+      "owner": "anassgounnou36-tech",
+      "repos": 7,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "avalabsorg",
+      "repos": 7,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "api-evangelist",
+      "repos": 7,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "vinefilabs",
+      "repos": 7,
+      "project": "VineFi",
+      "ecosystems": [
+        "VineFi"
+      ]
+    },
+    {
+      "owner": "koryntia",
+      "repos": 7,
+      "project": "Koryntina",
+      "ecosystems": [
+        "Koryntina"
+      ]
+    },
+    {
+      "owner": "gokite-ai",
+      "repos": 7,
+      "project": "KiteAI",
+      "ecosystems": [
+        "KiteAI"
+      ]
+    },
+    {
+      "owner": "luxdefi",
+      "repos": 7,
+      "project": "LUX Defi",
+      "ecosystems": [
+        "LUX Defi"
+      ]
+    },
+    {
+      "owner": "merit-circle",
+      "repos": 7,
+      "project": "Merit Circle",
+      "ecosystems": [
+        "Merit Circle"
+      ]
+    },
+    {
+      "owner": "arableprotocol",
+      "repos": 7,
+      "project": "Arable Protocol",
+      "ecosystems": [
+        "Arable Protocol"
+      ]
+    },
+    {
+      "owner": "movemntdev",
+      "repos": 7,
+      "project": "Movement",
+      "ecosystems": [
+        "Movement"
+      ]
+    },
+    {
+      "owner": "forwardprotocol",
+      "repos": 7,
+      "project": "Forward Protocol",
+      "ecosystems": [
+        "Forward Protocol"
+      ]
+    },
+    {
+      "owner": "bundlr-network",
+      "repos": 7,
+      "project": "Irys (prev Bundlr)",
+      "ecosystems": [
+        "Irys (prev Bundlr)"
+      ]
+    },
+    {
+      "owner": "hashflownetwork",
+      "repos": 7,
+      "project": "Hashflow",
+      "ecosystems": [
+        "Hashflow"
+      ]
+    },
+    {
+      "owner": "cookfinance",
+      "repos": 7,
+      "project": "Cook Finance",
+      "ecosystems": [
+        "Cook Finance"
+      ]
+    },
+    {
+      "owner": "benqi-fi",
+      "repos": 7,
+      "project": "BENQI",
+      "ecosystems": [
+        "BENQI"
+      ]
+    },
+    {
+      "owner": "sanghren",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "gondola-finance",
+      "repos": 6,
+      "project": "Gondola Finance",
+      "ecosystems": [
+        "Gondola Finance"
+      ]
+    },
+    {
+      "owner": "kassandrafinance",
+      "repos": 6,
+      "project": "Kassandra Finance",
+      "ecosystems": [
+        "Kassandra Finance"
+      ]
+    },
+    {
+      "owner": "consideritdone",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "snowbankdao",
+      "repos": 6,
+      "project": "Snowbank",
+      "ecosystems": [
+        "Snowbank"
+      ]
+    },
+    {
+      "owner": "code-423n4",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "thor-financial",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "deepml1818",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "platypus-finance",
+      "repos": 6,
+      "project": "Platypus Finance",
+      "ecosystems": [
+        "Platypus Finance"
+      ]
+    },
+    {
+      "owner": "axelarnetwork",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "tudo1403",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "suberra",
+      "repos": 6,
+      "project": "Suberra",
+      "ecosystems": [
+        "Suberra"
+      ]
+    },
+    {
+      "owner": "massdotmoney",
+      "repos": 6,
+      "project": "Nested Finance",
+      "ecosystems": [
+        "Nested Finance"
+      ]
+    },
+    {
+      "owner": "luckyspot0gold",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "soldev3639",
+      "repos": 6,
+      "project": "Avalanche",
+      "ecosystems": []
+    },
+    {
+      "owner": "datagram-group",
+      "repos": 6,
+      "project": "Datagram",
+      "ecosystems": [
+        "Datagram"
+      ]
+    },
+    {
+      "owner": "bango-org",
+      "repos": 6,
+      "project": "Bango",
+      "ecosystems": [
+        "Bango"
+      ]
+    },
+    {
+      "owner": "balancer-labs",
+      "repos": 6,
+      "project": "Balancer",
+      "ecosystems": [
+        "Balancer"
+      ]
+    },
+    {
+      "owner": "onplyr",
+      "repos": 6,
+      "project": "PLYRL1",
+      "ecosystems": [
+        "PLYRL1"
+      ]
+    },
+    {
+      "owner": "boringdao",
+      "repos": 6,
+      "project": "BoringDAO",
+      "ecosystems": [
+        "BoringDAO"
+      ]
+    },
+    {
+      "owner": "web3bazaar",
+      "repos": 6,
+      "project": "Web3 Bazaar",
+      "ecosystems": [
+        "Web3 Bazaar"
+      ]
+    },
+    {
+      "owner": "outerbridgeio",
+      "repos": 6,
+      "project": "OuterbridgeIO",
+      "ecosystems": [
+        "OuterbridgeIO"
+      ]
+    },
+    {
+      "owner": "metroswap",
+      "repos": 6,
+      "project": "Metroswap",
+      "ecosystems": [
+        "Metroswap"
+      ]
+    },
+    {
+      "owner": "cougarswap",
+      "repos": 6,
+      "project": "Cougar Swap",
+      "ecosystems": [
+        "Cougar Swap"
+      ]
+    },
+    {
+      "owner": "avme",
+      "repos": 6,
+      "project": "avme",
+      "ecosystems": [
+        "avme"
+      ]
+    },
+    {
+      "owner": "wonderland-money",
+      "repos": 6,
+      "project": "Wonderland Finance",
+      "ecosystems": [
+        "Wonderland Finance"
+      ]
+    },
+    {
+      "owner": "teddy-cash",
+      "repos": 6,
+      "project": "Teddy Cash",
+      "ecosystems": [
+        "Teddy Cash"
+      ]
+    },
+    {
+      "owner": "polygaj",
+      "repos": 6,
+      "project": "Gaj Finance",
+      "ecosystems": [
+        "Gaj Finance"
+      ]
+    },
+    {
+      "owner": "xdollar-finance",
+      "repos": 6,
+      "project": "xDollar",
+      "ecosystems": [
+        "xDollar"
+      ]
+    },
+    {
+      "owner": "traderjoe-xyz",
+      "repos": 6,
+      "project": "LFJ",
+      "ecosystems": [
+        "LFJ"
+      ]
+    }
+  ]
+}
