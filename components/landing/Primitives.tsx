@@ -1,20 +1,21 @@
-import { ShieldCheck, Waves, Zap } from "lucide-react";
+import { GitMerge, ShieldCheck, Zap } from "lucide-react";
 
+// Only claims that are actually true of the deployed contracts and app.
 const primitives = [
   {
     icon: Zap,
     title: "Sub-second finality",
-    body: "Avalanche C-Chain approval makes micro-milestone iteration friction-free.",
-  },
-  {
-    icon: Waves,
-    title: "Streaming splits",
-    body: "Continuous token streams divide downstream to dependency repositories.",
+    body: "Built on Avalanche C-Chain, so milestone approvals and payouts confirm in seconds.",
   },
   {
     icon: ShieldCheck,
-    title: "Non-custodial",
-    body: "EscrowManager.sol holds funds. Releases are milestone-gated, never discretionary.",
+    title: "Non-custodial escrow",
+    body: "SnowdriftTaskEscrow holds the bounty on-chain. Releases are milestone-gated and only the poster can approve — funds refund automatically if a task expires.",
+  },
+  {
+    icon: GitMerge,
+    title: "Open-source discovery",
+    body: "An index of Avalanche-ecosystem repositories and their open issues, drawn from the Electric Capital taxonomy and expanding.",
   },
 ];
 

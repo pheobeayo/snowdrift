@@ -3,10 +3,12 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+// Real counts from the indexer — keep these in sync with what's live,
+// or wire them to the indexer API so they can never drift out of truth.
 const heroStats = [
-  { value: "12.8k", label: "AVAX in escrow" },
-  { value: "47", label: "active tasks" },
-  { value: "27", label: "open bounties" },
+  { value: "5", label: "projects indexed" },
+  { value: "14", label: "repositories" },
+  { value: "46", label: "open issues" },
   { value: "0%", label: "platform fee" },
 ];
 
