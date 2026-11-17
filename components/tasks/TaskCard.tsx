@@ -7,7 +7,7 @@ import { shortAddress } from "@/lib/utils";
 
 export function TaskCard({ task }: { task: Task }) {
   return (
-    <Link href={`/dashboard/tasks/${task.id}`} className="group block h-full">
+    <Link href={`/task/${task.id}`} className="group block h-full">
       <Card className="card-glow flex h-full flex-col transition-colors group-hover:border-teal-700">
         <CardHeader className="flex-row items-start justify-between gap-3 space-y-0">
           <div className="flex flex-wrap gap-1.5">

@@ -116,7 +116,7 @@ export function TaskDetail({ taskId }: { taskId: string }) {
   return (
     <div className="space-y-6">
       <Link
-        href="/dashboard/tasks"
+        href="/task"
         className="inline-flex items-center gap-1.5 text-sm text-ink-2 transition-colors hover:text-ink-1"
       >
         <ArrowLeft className="size-4" /> All tasks

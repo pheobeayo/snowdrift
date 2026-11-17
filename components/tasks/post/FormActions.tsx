@@ -22,7 +22,7 @@ export function FormActions() {
       <Button
         type="button"
         variant="ghost"
-        onClick={() => router.push("/dashboard/tasks")}
+        onClick={() => router.push("/task")}
       >
         Cancel
       </Button>
