@@ -173,4 +173,7 @@ Teal accents (`#14c490` / `#0d9e75`) on green-tinted near-black surfaces. Fonts:
 
 ---
 
-Built by [Phoebe (Ifeoluwa Sanni)](https://github.com/pheobeayo) · [ifeoluwaayosanni.vercel.app](https://ifeoluwaayosanni.vercel.app)
+Built by Orthic Team
+Oluwakemi Atoyebi
+Ifeoluwa Sanni
+Esther Oche
