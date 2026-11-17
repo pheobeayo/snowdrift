@@ -173,7 +173,7 @@ Teal accents (`#14c490` / `#0d9e75`) on green-tinted near-black surfaces. Fonts:
 
 ---
 
-Built by Orthic Team
-Oluwakemi Atoyebi
-Ifeoluwa Sanni
-Esther Oche
+## Built by Orthic Team
+- Oluwakemi Atoyebi
+- Ifeoluwa Sanni
+- Esther Oche
